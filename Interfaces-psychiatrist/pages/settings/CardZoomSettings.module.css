@@ -1,0 +1,59 @@
+.div{
+    border: black solid 1px;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    }
+    .p{
+        padding-top: 15px;
+    }
+    .input{
+        border: solid 2px;
+        width: 40%;
+        height: 5%;
+        font-size: 20px;
+    }
+    .h3{
+        margin-left:42%;
+            margin-top: -275px;
+            color: blue;
+        }
+        .one{
+            width: 50%;
+            margin-top: -2px;
+            margin-left: 42%;
+            padding: 10px;
+            font-size: 18px;
+          }
+          .two{
+            width: 50%;
+            margin-left: 42%;
+            padding: 10px;
+            font-size: 18px;
+          }
+          .three{
+            width: 50%;
+            margin-left: 42%;
+            padding: 10px;
+            font-size: 18px;
+          }
+          .four{
+            width: 50%;
+            margin-left: 42%;
+            padding: 10px;
+            font-size: 18px;
+          }
+          .five{
+            width: 50%;
+            margin-left: 42%;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .button{
+            margin-left: 85%;
+            margin-top: 20px;
+            background-color: blue;
+            text-align: center;
+            padding: 10px;
+            border: blue;
+        }
