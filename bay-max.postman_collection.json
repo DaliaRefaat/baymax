@@ -1,0 +1,1442 @@
+{
+	"info": {
+		"_postman_id": "277b69fd-8893-4b4b-9651-783c2c03ba4d",
+		"name": "bay-max",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24548459"
+	},
+	"item": [
+		{
+			"name": "Question",
+			"item": [
+				{
+					"name": "insert-Question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/insert-question?title=do&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwMjEzNDEsImV4cCI6MTY3MTAyNDk0MSwibmJmIjoxNjcxMDIxMzQxLCJqdGkiOiJsazVCQXpDY3VWdERrQlA2Iiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.8Ax6BWGNBU7kjOCLVQwSb13cf7VpiNgFuieud1wW96g",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"insert-question"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "do"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwMjEzNDEsImV4cCI6MTY3MTAyNDk0MSwibmJmIjoxNjcxMDIxMzQxLCJqdGkiOiJsazVCQXpDY3VWdERrQlA2Iiwic3ViIjoiNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.8Ax6BWGNBU7kjOCLVQwSb13cf7VpiNgFuieud1wW96g"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "questions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/questions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert-question-answer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/insert-question-answer?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2NzIzNTksImV4cCI6MTY3MTY3NTk1OSwibmJmIjoxNjcxNjcyMzU5LCJqdGkiOiJZT1o2bmJySFZZWG5iMFdsIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.TNP8CUi-S-Y4YFN3mCg2JydfxKq29tQ73Wr0L4IT5IY&question_id=1&answer=Hello222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"insert-question-answer"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2NzIzNTksImV4cCI6MTY3MTY3NTk1OSwibmJmIjoxNjcxNjcyMzU5LCJqdGkiOiJZT1o2bmJySFZZWG5iMFdsIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.TNP8CUi-S-Y4YFN3mCg2JydfxKq29tQ73Wr0L4IT5IY"
+								},
+								{
+									"key": "question_id",
+									"value": "1"
+								},
+								{
+									"key": "answer",
+									"value": "Hello222"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-question-answer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/delete-question-answer?question_id=1&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzAxODE2OTYsImV4cCI6MTY3MDE4NTI5NiwibmJmIjoxNjcwMTgxNjk2LCJqdGkiOiJadVRpZDJYNm8zY3E5aGtuIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.6AMXWt8rKWNO91fh6UQLEueNBNIuDtWPdED2qKz6iG0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"delete-question-answer"
+							],
+							"query": [
+								{
+									"key": "question_id",
+									"value": "1"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzAxODE2OTYsImV4cCI6MTY3MDE4NTI5NiwibmJmIjoxNjcwMTgxNjk2LCJqdGkiOiJadVRpZDJYNm8zY3E5aGtuIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.6AMXWt8rKWNO91fh6UQLEueNBNIuDtWPdED2qKz6iG0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-question",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/delete-question?id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"delete-question"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My-Question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/my-questions?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2Njg3MjMsImV4cCI6MTY3MTY3MjMyMywibmJmIjoxNjcxNjY4NzIzLCJqdGkiOiJ3U3pLRWIyZVVYcVZSWW1QIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rVrn2qA0sb85H7q9SPGh-9kvI1pzrHJburSeWdBrLGI",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"my-questions"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2Njg3MjMsImV4cCI6MTY3MTY3MjMyMywibmJmIjoxNjcxNjY4NzIzLCJqdGkiOiJ3U3pLRWIyZVVYcVZSWW1QIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rVrn2qA0sb85H7q9SPGh-9kvI1pzrHJburSeWdBrLGI"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/question?id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"question"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Articals",
+			"item": [
+				{
+					"name": "insert-Artical",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/insert-artical?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNTM4OTEsImV4cCI6MTY3MTA1NzQ5MSwibmJmIjoxNjcxMDUzODkxLCJqdGkiOiJFSnZQQnRiQlM2QnFzZ002Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wp3kz3Kl5QC6EsAhpYMIt9RMlWZdm276ba-_2WVaZe8&title=dsfklgj&type=sdfgsdgfdgdf&body=sgfsdgfdsgsdfgsdfgdsfgsdfgsdfgsdfgsdfgsdfgdf&img=../img.png",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"insert-artical"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNTM4OTEsImV4cCI6MTY3MTA1NzQ5MSwibmJmIjoxNjcxMDUzODkxLCJqdGkiOiJFSnZQQnRiQlM2QnFzZ002Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wp3kz3Kl5QC6EsAhpYMIt9RMlWZdm276ba-_2WVaZe8"
+								},
+								{
+									"key": "title",
+									"value": "dsfklgj"
+								},
+								{
+									"key": "type",
+									"value": "sdfgsdgfdgdf"
+								},
+								{
+									"key": "body",
+									"value": "sgfsdgfdsgsdfgsdfgdsfgsdfgsdfgsdfgsdfgsdfgdf"
+								},
+								{
+									"key": "img",
+									"value": "../img.png"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "articals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/articals",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert-artical-comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/insert-artical-comment?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2NDM1MTQsImV4cCI6MTY3MTY0NzExNCwibmJmIjoxNjcxNjQzNTE0LCJqdGkiOiI1NFJqRDliRW1OQkxScTUwIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WvTMWl2FB_E8XfwOUGuvAp5PfoP1jkRrNM27XT3vBL4&artical_id=1&comment=Commmmmmmmmmmmmmmmmmmmmmmmment",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"insert-artical-comment"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2NDM1MTQsImV4cCI6MTY3MTY0NzExNCwibmJmIjoxNjcxNjQzNTE0LCJqdGkiOiI1NFJqRDliRW1OQkxScTUwIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WvTMWl2FB_E8XfwOUGuvAp5PfoP1jkRrNM27XT3vBL4"
+								},
+								{
+									"key": "artical_id",
+									"value": "1"
+								},
+								{
+									"key": "comment",
+									"value": "Commmmmmmmmmmmmmmmmmmmmmmmment"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-artical-comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/delete-artical-comment?artical_id=1&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2NDM1MTQsImV4cCI6MTY3MTY0NzExNCwibmJmIjoxNjcxNjQzNTE0LCJqdGkiOiI1NFJqRDliRW1OQkxScTUwIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WvTMWl2FB_E8XfwOUGuvAp5PfoP1jkRrNM27XT3vBL4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"delete-artical-comment"
+							],
+							"query": [
+								{
+									"key": "artical_id",
+									"value": "1"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2NDM1MTQsImV4cCI6MTY3MTY0NzExNCwibmJmIjoxNjcxNjQzNTE0LCJqdGkiOiI1NFJqRDliRW1OQkxScTUwIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WvTMWl2FB_E8XfwOUGuvAp5PfoP1jkRrNM27XT3vBL4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-artical",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/delete-artical?id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"delete-artical"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My-artical",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/my-articals?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNTM4OTEsImV4cCI6MTY3MTA1NzQ5MSwibmJmIjoxNjcxMDUzODkxLCJqdGkiOiJFSnZQQnRiQlM2QnFzZ002Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wp3kz3Kl5QC6EsAhpYMIt9RMlWZdm276ba-_2WVaZe8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"my-articals"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNTM4OTEsImV4cCI6MTY3MTA1NzQ5MSwibmJmIjoxNjcxMDUzODkxLCJqdGkiOiJFSnZQQnRiQlM2QnFzZ002Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wp3kz3Kl5QC6EsAhpYMIt9RMlWZdm276ba-_2WVaZe8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Artical",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/artical?id=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"artical"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/logout?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzAwOTg4MzIsImV4cCI6MTY3MDEwMjQzMiwibmJmIjoxNjcwMDk4ODMyLCJqdGkiOiIyNVhQZ20zNHY3N1VWQXdzIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.acEzBotOalJvaXG9Ij09NqgtlO34BfWzLmviQMiW8iE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzAwOTg4MzIsImV4cCI6MTY3MDEwMjQzMiwibmJmIjoxNjcwMDk4ODMyLCJqdGkiOiIyNVhQZ20zNHY3N1VWQXdzIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.acEzBotOalJvaXG9Ij09NqgtlO34BfWzLmviQMiW8iE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/register?name=mohamed&password=123456789&email=bay-max1@gmail.com&gender=m&birth_date=2022-12-01&phone=010&type=admin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "mohamed"
+								},
+								{
+									"key": "password",
+									"value": "123456789"
+								},
+								{
+									"key": "email",
+									"value": "bay-max1@gmail.com"
+								},
+								{
+									"key": "gender",
+									"value": "m"
+								},
+								{
+									"key": "birth_date",
+									"value": "2022-12-01"
+								},
+								{
+									"key": "phone",
+									"value": "010"
+								},
+								{
+									"key": "type",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/login?email=bay-max2@gmail.com&password=2244668800",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "bay-max2@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "2244668800"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myNotification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/myNotification?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2Njg3MjMsImV4cCI6MTY3MTY3MjMyMywibmJmIjoxNjcxNjY4NzIzLCJqdGkiOiJ3U3pLRWIyZVVYcVZSWW1QIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rVrn2qA0sb85H7q9SPGh-9kvI1pzrHJburSeWdBrLGI",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"myNotification"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2Njg3MjMsImV4cCI6MTY3MTY3MjMyMywibmJmIjoxNjcxNjY4NzIzLCJqdGkiOiJ3U3pLRWIyZVVYcVZSWW1QIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rVrn2qA0sb85H7q9SPGh-9kvI1pzrHJburSeWdBrLGI"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read Notfication",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/readnotfication?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2Njg3MjMsImV4cCI6MTY3MTY3MjMyMywibmJmIjoxNjcxNjY4NzIzLCJqdGkiOiJ3U3pLRWIyZVVYcVZSWW1QIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rVrn2qA0sb85H7q9SPGh-9kvI1pzrHJburSeWdBrLGI&id=a6a08e89-0b75-453d-b764-ee63398ea1ea",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"readnotfication"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE2Njg3MjMsImV4cCI6MTY3MTY3MjMyMywibmJmIjoxNjcxNjY4NzIzLCJqdGkiOiJ3U3pLRWIyZVVYcVZSWW1QIiwic3ViIjoiOCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rVrn2qA0sb85H7q9SPGh-9kvI1pzrHJburSeWdBrLGI"
+								},
+								{
+									"key": "id",
+									"value": "a6a08e89-0b75-453d-b764-ee63398ea1ea"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "update-patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/update-patient?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE1ODExODQsImV4cCI6MTY3MTU4NDc4NCwibmJmIjoxNjcxNTgxMTg0LCJqdGkiOiJ2TWhvc0tITExCa0tqbXNDIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VClGB0GHw9nfIju1GrBrB5uttEsgA2zNz4cCHn_zTZU&name=mohamedhgjghj&email=mohamed@gmail.com&gender=m&phone=01022964376&birth_date=2020-12-12&img=./../img.png&password=2244668800",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"update-patient"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE1ODExODQsImV4cCI6MTY3MTU4NDc4NCwibmJmIjoxNjcxNTgxMTg0LCJqdGkiOiJ2TWhvc0tITExCa0tqbXNDIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VClGB0GHw9nfIju1GrBrB5uttEsgA2zNz4cCHn_zTZU"
+								},
+								{
+									"key": "name",
+									"value": "mohamedhgjghj"
+								},
+								{
+									"key": "email",
+									"value": "mohamed@gmail.com"
+								},
+								{
+									"key": "gender",
+									"value": "m"
+								},
+								{
+									"key": "phone",
+									"value": "01022964376"
+								},
+								{
+									"key": "birth_date",
+									"value": "2020-12-12"
+								},
+								{
+									"key": "img",
+									"value": "./../img.png"
+								},
+								{
+									"key": "password",
+									"value": "2244668800"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show-patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/show-patient?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyODY5NTcsImV4cCI6MTY3MjI5MDU1NywibmJmIjoxNjcyMjg2OTU3LCJqdGkiOiJZNUFwYVVaTkU1bVhuOTA4Iiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.T9_J-7OoQOK2vTmdeAsQviOtVsfbuMUU3ISOZdcEwx0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"show-patient"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyODY5NTcsImV4cCI6MTY3MjI5MDU1NywibmJmIjoxNjcyMjg2OTU3LCJqdGkiOiJZNUFwYVVaTkU1bVhuOTA4Iiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.T9_J-7OoQOK2vTmdeAsQviOtVsfbuMUU3ISOZdcEwx0"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All_Patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/patientAll",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"patientAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patient-chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/patient-chat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIwMDE5NTAsImV4cCI6MTY3MjAwNTU1MCwibmJmIjoxNjcyMDAxOTUwLCJqdGkiOiJyOFduSWR5V3RiMURZeTJUIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.jrXTf8OoFxYt-N9C6B5viWUQzaNmrUE9MEOr1fNvpww",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"patient-chat"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIwMDE5NTAsImV4cCI6MTY3MjAwNTU1MCwibmJmIjoxNjcyMDAxOTUwLCJqdGkiOiJyOFduSWR5V3RiMURZeTJUIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.jrXTf8OoFxYt-N9C6B5viWUQzaNmrUE9MEOr1fNvpww"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/patient-uploadLabTest?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyNTc2MzIsImV4cCI6MTY3MjI2MTIzMiwibmJmIjoxNjcyMjU3NjMyLCJqdGkiOiJnbGVBSFZRQjBrVzM1ejVvIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qoSRnLzPr-vVIobkzVJQa4UrYMyb68pPN2oVCdKsDEA&labTest=C:\\fakepath\\بيبي.png",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"patient-uploadLabTest"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyNTc2MzIsImV4cCI6MTY3MjI2MTIzMiwibmJmIjoxNjcyMjU3NjMyLCJqdGkiOiJnbGVBSFZRQjBrVzM1ejVvIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qoSRnLzPr-vVIobkzVJQa4UrYMyb68pPN2oVCdKsDEA"
+								},
+								{
+									"key": "labTest",
+									"value": "C:\\fakepath\\بيبي.png"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/patient-getFiles?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyNzgwMjcsImV4cCI6MTY3MjI4MTYyNywibmJmIjoxNjcyMjc4MDI3LCJqdGkiOiJBOThzOEw3clNoZXJtc1VaIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Yf_FtFHG3hZk3ZnJJkeqW-XB9dclCosVj4vpEOo-ju4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"patient-getFiles"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyNzgwMjcsImV4cCI6MTY3MjI4MTYyNywibmJmIjoxNjcyMjc4MDI3LCJqdGkiOiJBOThzOEw3clNoZXJtc1VaIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Yf_FtFHG3hZk3ZnJJkeqW-XB9dclCosVj4vpEOo-ju4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "psychiatrist",
+			"item": [
+				{
+					"name": "update-psychiatrist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/update-psychiatrist?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI3NjU0NDEsImV4cCI6MTY3Mjc2OTA0MSwibmJmIjoxNjcyNzY1NDQxLCJqdGkiOiJVeFA2VUx4OW1JQTRKYUUwIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uRWF1yHP1HdSH8YI-5rcjFXsDk6q4zLvJzHS4c0T730&name=mohamed&email=bay-max2@gmail.com&gender=m&phone=01022964376&birth_date=2020-12-12&img=./../img.png&password=123456789&years_experience=12&details=sjhgkjfhdjkhgjkdf&specialization=kldfgjkldfs",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"update-psychiatrist"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI3NjU0NDEsImV4cCI6MTY3Mjc2OTA0MSwibmJmIjoxNjcyNzY1NDQxLCJqdGkiOiJVeFA2VUx4OW1JQTRKYUUwIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uRWF1yHP1HdSH8YI-5rcjFXsDk6q4zLvJzHS4c0T730"
+								},
+								{
+									"key": "name",
+									"value": "mohamed"
+								},
+								{
+									"key": "email",
+									"value": "bay-max2@gmail.com"
+								},
+								{
+									"key": "gender",
+									"value": "m"
+								},
+								{
+									"key": "phone",
+									"value": "01022964376"
+								},
+								{
+									"key": "birth_date",
+									"value": "2020-12-12"
+								},
+								{
+									"key": "img",
+									"value": "./../img.png"
+								},
+								{
+									"key": "password",
+									"value": "123456789"
+								},
+								{
+									"key": "years_experience",
+									"value": "12"
+								},
+								{
+									"key": "details",
+									"value": "sjhgkjfhdjkhgjkdf"
+								},
+								{
+									"key": "specialization",
+									"value": "kldfgjkldfs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show-psychiatrist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/show-psychiatrist?id=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"show-psychiatrist"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI3NjU0NDEsImV4cCI6MTY3Mjc2OTA0MSwibmJmIjoxNjcyNzY1NDQxLCJqdGkiOiJVeFA2VUx4OW1JQTRKYUUwIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uRWF1yHP1HdSH8YI-5rcjFXsDk6q4zLvJzHS4c0T730",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All_Psychiatrist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/psychiatristAll",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"psychiatristAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "avilable-psychiatrist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/avilable-psychiatrist",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"avilable-psychiatrist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allowChat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/allowChat?id=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIzODcyODQsImV4cCI6MTY3MjM5MDg4NCwibmJmIjoxNjcyMzg3Mjg0LCJqdGkiOiJTV3ZyVUVpSXFhTDBVa042Iiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yJI7tenucutSoJLgLi-FQnz61zI9_uxwkrdMG_G0Wk8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"allowChat"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIzODcyODQsImV4cCI6MTY3MjM5MDg4NCwibmJmIjoxNjcyMzg3Mjg0LCJqdGkiOiJTV3ZyVUVpSXFhTDBVa042Iiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yJI7tenucutSoJLgLi-FQnz61zI9_uxwkrdMG_G0Wk8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "psychiatrist-chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/psychiatrist-chat?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNjIyOTIsImV4cCI6MTY3MTA2NTg5MiwibmJmIjoxNjcxMDYyMjkyLCJqdGkiOiJleHh4QWhCeXByV0R4Z3FvIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.j4HRItAAeSLZI6X-b1nJ93qGNPI1IGu971pPH0zBf-s",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"psychiatrist-chat"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNjIyOTIsImV4cCI6MTY3MTA2NTg5MiwibmJmIjoxNjcxMDYyMjkyLCJqdGkiOiJleHh4QWhCeXByV0R4Z3FvIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.j4HRItAAeSLZI6X-b1nJ93qGNPI1IGu971pPH0zBf-s"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/psychiatrist-home?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyODg0ODksImV4cCI6MTY3MjI5MjA4OSwibmJmIjoxNjcyMjg4NDg5LCJqdGkiOiJWdnNJTmRlVTNCeVM1R1hFIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ezanTzybkJb62vyXUwD-6dT52KBnHk-JDF_6XWXWvaY",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"psychiatrist-home"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIyODg0ODksImV4cCI6MTY3MjI5MjA4OSwibmJmIjoxNjcyMjg4NDg5LCJqdGkiOiJWdnNJTmRlVTNCeVM1R1hFIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ezanTzybkJb62vyXUwD-6dT52KBnHk-JDF_6XWXWvaY"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myPatient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/myPatient?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIzODcyODQsImV4cCI6MTY3MjM5MDg4NCwibmJmIjoxNjcyMzg3Mjg0LCJqdGkiOiJTV3ZyVUVpSXFhTDBVa042Iiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yJI7tenucutSoJLgLi-FQnz61zI9_uxwkrdMG_G0Wk8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"myPatient"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIzODcyODQsImV4cCI6MTY3MjM5MDg4NCwibmJmIjoxNjcyMzg3Mjg0LCJqdGkiOiJTV3ZyVUVpSXFhTDBVa042Iiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.yJI7tenucutSoJLgLi-FQnz61zI9_uxwkrdMG_G0Wk8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "All Session",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/allSession?token",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"allSession"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert Sessiond",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/insert-session?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNzM4NTIsImV4cCI6MTY3MTA3NzQ1MiwibmJmIjoxNjcxMDczODUyLCJqdGkiOiJhZDJ6Wk1wUUtqQWdBOHlEIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3sgcj4dTtGCFVDdR1VBmwO16FZ2pOjOYy8x-2CpaDk&day=1&time=12:30&duration=30&price=60",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"insert-session"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzEwNzM4NTIsImV4cCI6MTY3MTA3NzQ1MiwibmJmIjoxNjcxMDczODUyLCJqdGkiOiJhZDJ6Wk1wUUtqQWdBOHlEIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A3sgcj4dTtGCFVDdR1VBmwO16FZ2pOjOYy8x-2CpaDk"
+								},
+								{
+									"key": "day",
+									"value": "1"
+								},
+								{
+									"key": "time",
+									"value": "12:30"
+								},
+								{
+									"key": "duration",
+									"value": "30"
+								},
+								{
+									"key": "price",
+									"value": "60"
+								},
+								{
+									"key": "psychiatrist_id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Session",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/delete-session?token=.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzA1MjM3MzMsImV4cCI6MTY3MDUyNzMzMywibmJmIjoxNjcwNTIzNzMzLCJqdGkiOiJBTzl6S2Q0RUo3VGp0WE5yIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wlStX_g7ab_-tBsoW0RVb2WdqrpxA-4-uPm4wKEBY_M&id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"delete-session"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": ".eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzA1MjM3MzMsImV4cCI6MTY3MDUyNzMzMywibmJmIjoxNjcwNTIzNzMzLCJqdGkiOiJBTzl6S2Q0RUo3VGp0WE5yIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wlStX_g7ab_-tBsoW0RVb2WdqrpxA-4-uPm4wKEBY_M"
+								},
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Session",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/psychiatrist-session?psychiatrist_id=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"psychiatrist-session"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "psychiatrist_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Apointment",
+			"item": [
+				{
+					"name": "insertApointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/insert-apointment?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4MTgxNjYsImV4cCI6MTY3MjgyMTc2NiwibmJmIjoxNjcyODE4MTY2LCJqdGkiOiJaaUg0UUZHMEVKaURTbFVXIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.nO81wW0A-qLf6JINcdigT6x2Zskie4vXI34xbdOmR3E&psychiatrist_id=3&date=2023-01-09 07:00:00",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"insert-apointment"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzI4MTgxNjYsImV4cCI6MTY3MjgyMTc2NiwibmJmIjoxNjcyODE4MTY2LCJqdGkiOiJaaUg0UUZHMEVKaURTbFVXIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.nO81wW0A-qLf6JINcdigT6x2Zskie4vXI34xbdOmR3E"
+								},
+								{
+									"key": "psychiatrist_id",
+									"value": "3"
+								},
+								{
+									"key": "date",
+									"value": "2023-01-09 07:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Apointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/allApointments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"allApointments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Apointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/my-apointments?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIzODI1MTUsImV4cCI6MTY3MjM4NjExNSwibmJmIjoxNjcyMzgyNTE1LCJqdGkiOiJhMEVHWHBCRk1ldm1vYm4zIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fOXf4CorlDlNfNwNPYkpEUL2220S8w4hLLn8nQ7i_eU",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"my-apointments"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzIzODI1MTUsImV4cCI6MTY3MjM4NjExNSwibmJmIjoxNjcyMzgyNTE1LCJqdGkiOiJhMEVHWHBCRk1ldm1vYm4zIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fOXf4CorlDlNfNwNPYkpEUL2220S8w4hLLn8nQ7i_eU"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/deleteAppointment?id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"deleteAppointment"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pay?id=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pay"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "chat",
+			"item": [
+				{
+					"name": "get psychiatrist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/psychiatrist-getMsg?token&patient_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"psychiatrist-getMsg"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": null
+								},
+								{
+									"key": "patient_id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Patient-getMsg?psychiatrist_id=3&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE1ODI1ODcsImV4cCI6MTY3MTU4NjE4NywibmJmIjoxNjcxNTgyNTg3LCJqdGkiOiJOYzlLdkhHd2x1UVl4Z1k1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VdCqq3IG6jTSjGh9A8DFkHgGRdjI5IWwS9gMW9DSQSM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Patient-getMsg"
+							],
+							"query": [
+								{
+									"key": "psychiatrist_id",
+									"value": "3"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE1ODI1ODcsImV4cCI6MTY3MTU4NjE4NywibmJmIjoxNjcxNTgyNTg3LCJqdGkiOiJOYzlLdkhHd2x1UVl4Z1k1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VdCqq3IG6jTSjGh9A8DFkHgGRdjI5IWwS9gMW9DSQSM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/patient-sendMsg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE1ODI1ODcsImV4cCI6MTY3MTU4NjE4NywibmJmIjoxNjcxNTgyNTg3LCJqdGkiOiJOYzlLdkhHd2x1UVl4Z1k1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VdCqq3IG6jTSjGh9A8DFkHgGRdjI5IWwS9gMW9DSQSM&psychiatrist_id=3&msg=gdfgdfg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"patient-sendMsg"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzE1ODI1ODcsImV4cCI6MTY3MTU4NjE4NywibmJmIjoxNjcxNTgyNTg3LCJqdGkiOiJOYzlLdkhHd2x1UVl4Z1k1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VdCqq3IG6jTSjGh9A8DFkHgGRdjI5IWwS9gMW9DSQSM"
+								},
+								{
+									"key": "psychiatrist_id",
+									"value": "3"
+								},
+								{
+									"key": "msg",
+									"value": "gdfgdfg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send psychiatrist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/psychiatrist-sendMsg?token&patient_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"psychiatrist-sendMsg"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": null
+								},
+								{
+									"key": "patient_id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Testing",
+			"item": [
+				{
+					"name": "send mail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sendMail",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sendMail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertApointment Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/zoom?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzA2MTY5MDEsImV4cCI6MTY3MDYyMDUwMSwibmJmIjoxNjcwNjE2OTAxLCJqdGkiOiJJcElvOUJ2WG9FUVNVTGI0Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VDIeUn4xOI2gGcEbMV-cZEZtidmI4JWM_3eSeaKZ-44&psychiatrist_id=1&date=2022-12-12 10:00:00&duration=30&price=100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"zoom"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzA2MTY5MDEsImV4cCI6MTY3MDYyMDUwMSwibmJmIjoxNjcwNjE2OTAxLCJqdGkiOiJJcElvOUJ2WG9FUVNVTGI0Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VDIeUn4xOI2gGcEbMV-cZEZtidmI4JWM_3eSeaKZ-44"
+								},
+								{
+									"key": "psychiatrist_id",
+									"value": "1"
+								},
+								{
+									"key": "date",
+									"value": "2022-12-12 10:00:00"
+								},
+								{
+									"key": "duration",
+									"value": "30"
+								},
+								{
+									"key": "price",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "zoomTest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/zoomtest",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"zoomtest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkApointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/checkapointment",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"checkapointment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/adminHome",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"adminHome"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "default"
+		},
+		{
+			"key": "url",
+			"value": "https://bay-max.000webhostapp.com/api",
+			"type": "default",
+			"disabled": true
+		}
+	]
+}

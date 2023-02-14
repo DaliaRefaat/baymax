@@ -1,0 +1,96 @@
+{
+  "private": true,
+  "name": "bay-max",
+  "version": "0.1.0",
+  "homepage": "/web",
+  "scripts": {
+    "dev": "vite",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "axios": "^1.1.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "laravel-vite-plugin": "^0.6.0",
+    "lodash": "^4.17.19",
+    "postcss": "^8.1.14",
+    "vite": "^3.0.0",
+    "webpack": "^5.75.0"
+  },
+  "dependencies": {
+        "@progress/kendo-data-query": "^1.6.0",
+        "@progress/kendo-drawing": "^1.17.2",
+        "@progress/kendo-licensing": "^1.2.2",
+        "@progress/kendo-react-animation": "^5.9.0",
+        "@progress/kendo-react-buttons": "^5.9.0",
+        "@progress/kendo-react-charts": "^5.9.0",
+        "@progress/kendo-react-conversational-ui": "^5.9.0",
+        "@progress/kendo-react-data-tools": "^5.9.0",
+        "@progress/kendo-react-dateinputs": "^5.9.0",
+        "@progress/kendo-react-dialogs": "^5.9.0",
+        "@progress/kendo-react-dropdowns": "^5.9.0",
+        "@progress/kendo-react-editor": "^5.9.0",
+        "@progress/kendo-react-excel-export": "^5.9.0",
+        "@progress/kendo-react-form": "^5.9.0",
+        "@progress/kendo-react-gantt": "^5.9.0",
+        "@progress/kendo-react-gauges": "^5.9.0",
+        "@progress/kendo-react-grid": "^5.9.0",
+        "@progress/kendo-react-indicators": "^5.9.0",
+        "@progress/kendo-react-inputs": "^5.9.0",
+        "@progress/kendo-react-intl": "^5.9.0",
+        "@progress/kendo-react-labels": "^5.9.0",
+        "@progress/kendo-react-layout": "^5.9.0",
+        "@progress/kendo-react-listbox": "^5.9.0",
+        "@progress/kendo-react-listview": "^5.9.0",
+        "@progress/kendo-react-notification": "^5.9.0",
+        "@progress/kendo-react-pdf": "^5.9.0",
+        "@progress/kendo-react-pivotgrid": "^5.9.0",
+        "@progress/kendo-react-popup": "^5.9.0",
+        "@progress/kendo-react-progressbars": "^5.9.0",
+        "@progress/kendo-react-ripple": "^5.9.0",
+        "@progress/kendo-react-scheduler": "^5.9.0",
+        "@progress/kendo-react-sortable": "^5.9.0",
+        "@progress/kendo-react-tooltip": "^5.9.0",
+        "@progress/kendo-react-treelist": "^5.9.0",
+        "@progress/kendo-react-treeview": "^5.9.0",
+        "@progress/kendo-react-upload": "^5.9.0",
+        "@progress/kendo-theme-bootstrap": "^5.12.0",
+        "@progress/kendo-theme-default": "^5.12.0",
+        "@progress/kendo-theme-material": "^5.12.0",
+    "@rollup/plugin-terser": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "css-loader": "^6.7.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-css-modules": "^4.7.11",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "^5.0.1",
+    "style-loader": "^3.3.1",
+    "axios": "^1.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
