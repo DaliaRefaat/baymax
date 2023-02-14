@@ -1,0 +1,31 @@
+.w-45{
+    width: 45% !important;
+}
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
+}
+
+.appoint-card_info {
+
+    width: 65% !important;
+}
+
+.appoint-card_images {
+
+    width: 35% !important;
+}
+
+.appoint-card .appoint-card_images .carousel-item img {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.appoint-card .amnities img {
+    max-height: 20px;
+}
+
+.appoint-card .appoint-checklist {
+    list-style-type: none;
+}
